@@ -2,88 +2,57 @@
 
 This repository contains implementations of fundamental Machine Learning algorithms from scratch, demonstrating the underlying mathematics and logic before comparing them with scikit-learn implementations.
 
+## 📚 Table of Contents
+
+1. [Regression](#1-regression)
+2. [Classification](#2-classification)
+3. [Clustering (Unsupervised)](#3-clustering-unsupervised)
+4. [Neural Networks](#4-neural-networks)
+5. [Getting Started](#-getting-started)
+6. [Learning Objectives](#-learning-objectives)
+
+---
+
 ## 📚 Algorithms Implemented
 
-### 1. Linear Regression
-- **Notebook**: `01_Linear Regression.ipynb`
-- Implementation of linear regression from scratch
-- Mathematical foundations and optimization
+### 1. Regression
+| Algorithm | Notebook | Key Concepts |
+|---|---|---|
+| **Linear Regression** | [01_Linear Regression.ipynb](file:///1_Regression/01_Linear%20Regression.ipynb) | Foundations, Optimization |
+| **Ridge Regression** | [06_Ridge_Regression_From_Scratch.ipynb](file:///1_Regression/06_Ridge_Regression_From_Scratch.ipynb) | L2 Regularization, Overfitting |
+| **Lasso Regression** | [07_Lasso_Regression_From_Scratch.ipynb](file:///1_Regression/07_Lasso_Regression_From_Scratch.ipynb) | L1 Regularization, Feature Selection |
+| **Elastic Net** | [08_Elastic_Net_From_Scratch.ipynb](file:///1_Regression/08_Elastic_Net_From_Scratch.ipynb) | L1 + L2 Regularization |
+| **Support Vector Regression (SVR)** | [09_SVR_From_Scratch.ipynb](file:///1_Regression/09_SVR_From_Scratch.ipynb) | Epsilon-insensitive loss |
+| **Decision Tree Regression** | [10_Decision_Tree_Regression_From_Scratch.ipynb](file:///1_Regression/10_Decision_Tree_Regression_From_Scratch.ipynb) | MSE-based splitting |
+| **Random Forest Regression** | [11_Random_Forest_Regression_From_Scratch.ipynb](file:///1_Regression/11_Random_Forest_Regression_From_Scratch.ipynb) | Bagging, Ensembles |
+| **Gradient Boosting Regression** | [12_Gradient_Boosting_Regression_From_Scratch.ipynb](file:///1_Regression/12_Gradient_Boosting_Regression_From_Scratch.ipynb) | Sequential learning, Residuals |
+| **AdaBoost Regression** | [13_AdaBoost_Regression_From_Scratch.ipynb](file:///1_Regression/13_AdaBoost_Regression_From_Scratch.ipynb) | Weight updates, R2 logic |
+| **k-NN Regression** | [14_KNN_Regression_From_Scratch.ipynb](file:///1_Regression/14_KNN_Regression_From_Scratch.ipynb) | Distance-based averaging |
 
-### 2. Logistic Regression
-- **Notebook**: `02_Logistic_Regression_From_Scratch_To_Sklearn.ipynb`
-- Binary classification using logistic regression
-- From scratch implementation to scikit-learn comparison
+### 2. Classification
+| Algorithm | Notebook | Key Concepts |
+|---|---|---|
+| **Logistic Regression** | [02_Logistic_Regression.ipynb](file:///2_Classification/02_Logistic_Regression_From_Scratch_To_Sklearn.ipynb) | Binary classification, Sigmoid |
+| **Decision Trees** | [03_decision tree from scratch.ipynb](file:///2_Classification/03_decision%20tree%20from%20scratch.ipynb) | Entropy, Information Gain |
+| **Random Forest (Classifier)** | [04_Random_Forest_From_Scratch.ipynb](file:///2_Classification/04_Random_Forest_From_Scratch.ipynb) | Majority voting, Bootstrapping |
+| **Naive Bayes** | [15_Naive_Bayes_From_Scratch.ipynb](file:///2_Classification/15_Naive_Bayes_From_Scratch.ipynb) | Probability, Log-likelihood |
+| **k-NN Classification** | [16_KNN_Classification_From_Scratch.ipynb](file:///2_Classification/16_KNN_Classification_From_Scratch.ipynb) | Distance-based voting |
+| **Support Vector Machine (SVM)** | [17_SVM_From_Scratch.ipynb](file:///2_Classification/17_SVM_From_Scratch.ipynb) | Max margin, Hinge loss |
+| **Gradient Boosting Classifier** | [18_Gradient_Boosting_Classifier_From_Scratch.ipynb](file:///2_Classification/18_Gradient_Boosting_Classifier_From_Scratch.ipynb) | Log-loss optimization |
+| **AdaBoost Classifier** | [19_AdaBoost_Classifier_From_Scratch.ipynb](file:///2_Classification/19_AdaBoost_Classifier_From_Scratch.ipynb) | SAMME logic, Stumps |
 
-### 3. Decision Trees
-- **Notebook**: `03_decision tree from scratch.ipynb`
-- Entropy and Information Gain calculations
-- Tree building algorithm
-- Label Encoding vs One-Hot Encoding
-- Visualization with scikit-learn
+### 3. Clustering (Unsupervised)
+| Algorithm | Notebook | Key Concepts |
+|---|---|---|
+| **k-Means Clustering** | [20_KMeans_Clustering_From_Scratch.ipynb](file:///3_Clustering/20_KMeans_Clustering_From_Scratch.ipynb) | Centroids, Elbow method |
+| **Hierarchical Clustering** | [21_Hierarchical_Clustering_From_Scratch.ipynb](file:///3_Clustering/21_Hierarchical_Clustering_From_Scratch.ipynb) | Dendrograms, Agglomerative |
+| **DBSCAN** | [22_DBSCAN_From_Scratch.ipynb](file:///3_Clustering/22_DBSCAN_From_Scratch.ipynb) | Density-based, Outliers |
 
-### 4. Random Forest (Classifier)
-- **Notebook**: `04_Random_Forest_From_Scratch.ipynb`
-- Ensemble learning with bootstrapping
-- Feature subset selection
-- Majority voting for predictions
-- Comparison with single Decision Tree
+### 4. Neural Networks
+| Algorithm | Notebook | Key Concepts |
+|---|---|---|
+| **Multi-Layer Perceptron (MLP)** | [05_Neural_Network_From_Scratch.ipynb](file:///4_Neural_Networks/05_Neural_Network_From_Scratch.ipynb) | Backprop, XOR problem |
 
-### 5. Neural Networks (MLP)
-- **Notebook**: `05_Neural_Network_From_Scratch.ipynb`
-- Multi-Layer Perceptron implementation
-- Forward propagation
-- Backpropagation algorithm
-- Training on XOR problem (non-linear classification)
-
-### 6. Ridge Regression
-- **Notebook**: `06_Ridge_Regression_From_Scratch.ipynb`
-- L2 Regularization to prevent overfitting
-- Closed-form solution implementation
-
-### 7. Decision Tree Regression
-- **Notebook**: `10_Decision_Tree_Regression_From_Scratch.ipynb`
-- MSE-based splitting for continuous targets
-- Tree-based regression logic
-
-### 8. Random Forest Regression
-- **Notebook**: `11_Random_Forest_Regression_From_Scratch.ipynb`
-- Ensemble of regression trees
-- Bootstrapping and averaging results
-
-### 9. k-NN Classification & Regression
-- **Notebooks**: `16_KNN_Classification_From_Scratch.ipynb`, `14_KNN_Regression_From_Scratch.ipynb`
-- Distance-based learning (Euclidean/Manhattan)
-- Majority voting and continuous averaging
-
-### 10. Naive Bayes
-- **Notebook**: `15_Naive_Bayes_From_Scratch.ipynb`
-- Gaussian, Multinomial, and Bernoulli variants
-- Conditional probability and log-likelihood implementation
-
-### 11. Lasso Regression & Elastic Net
-- **Notebooks**: `07_Lasso_Regression_From_Scratch.ipynb`, `08_Elastic_Net_From_Scratch.ipynb`
-- L1 Regularization and Feature Selection
-- Coordinate Descent algorithm implementation
-
-### 12. AdaBoost Classification & Regression
-- **Notebooks**: `19_AdaBoost_Classifier_From_Scratch.ipynb`, `13_AdaBoost_Regression_From_Scratch.ipynb`
-- Adaptive Boosting with Decision Stumps
-- Sample weight updates and SAMME/R2 logic implementation
-
-### 13. Support Vector Machine & Regression
-- **Notebooks**: `17_SVM_From_Scratch.ipynb`, `09_SVR_From_Scratch.ipynb`
-- Maximum margin classification and regression
-- Epsilon-insensitive and Hinge loss implementations
-
-### 14. Gradient Boosting Classification & Regression
-- **Notebooks**: `12_Gradient_Boosting_Regression_From_Scratch.ipynb`, `18_Gradient_Boosting_Classifier_From_Scratch.ipynb`
-- Sequential ensemble learning
-- Residual fitting and log-loss optimization for classification
-
-### 15. Clustering Algorithms (Unsupervised)
-- **Notebooks**: `20_KMeans_Clustering_From_Scratch.ipynb`, `21_Hierarchical_Clustering_From_Scratch.ipynb`, `22_DBSCAN_From_Scratch.ipynb`
-- centroid-based (k-Means), hierarchy-based (Agglomerative), and density-based (DBSCAN) clustering
-- Includes Elbow method and Dendrogram visualizations
 
 ## 🎯 Learning Objectives
 
@@ -92,21 +61,37 @@ This repository contains implementations of fundamental Machine Learning algorit
 - Compare custom implementations with scikit-learn
 - Gain intuition about when and how to use different algorithms
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
-### Prerequisites
+#### 1. Environment Setup
+It is recommended to use a virtual environment:
 ```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install numpy matplotlib scikit-learn jupyter
 ```
 
-### Running the Notebooks
+#### 2. Running the Notebooks
 1. Clone this repository
 2. Navigate to the project directory
 3. Launch Jupyter Notebook:
    ```bash
    jupyter notebook
    ```
-4. Open any notebook and run the cells sequentially
+4. Explore the folders and run the notebooks!
+
+---
+
+## 🛤️ Recommended Learning Path
+
+If you are new to Machine Learning, I recommend following this order:
+1. **Basics**: `1_Regression/01_Linear Regression.ipynb`
+2. **Classification Basics**: `2_Classification/02_Logistic_Regression.ipynb`
+3. **Tree Models**: `2_Classification/03_decision tree from scratch.ipynb` -> `04_Random_Forest`
+4. **Advanced Regression**: Lasso, Ridge, and Elastic Net
+5. **Ensemble Methods**: AdaBoost and Gradient Boosting
+6. **Unsupervised**: Start with k-Means clustering
+7. **Neural Networks**: Deep dive into the MLP implementation
 
 ## 📖 Notebook Structure
 
